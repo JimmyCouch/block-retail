@@ -9,6 +9,13 @@ include: "/explores/*.explore"
 # Dashboard Includes
 include: "/dashboards/*.dashboard.lookml" # include all the dashboards
 
+include: "/pdts/*"
+
+explore: customers_pdt {}
+explore: line_items_pdt {}
+explore: products_pdt {}
+explore: transactions_pdt {}
+
 
 # Value formats:
 named_value_format: currency_k {
