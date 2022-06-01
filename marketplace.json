@@ -1,0 +1,25 @@
+{
+  "label": "Retail Analytics Block",
+  "category_label": "Models",
+  "branding": {
+    "image_uri": "https://marketplace-api.looker.com/block-icons/retail-placeholder.png",
+    "badge": "Beta",
+    "tagline": "Get a comprehensive overview of your group and store performance, your customer behaviour, your basket dynamics, and which customer segments or product bundles to promote."
+  },
+
+  "constants": {
+    "CONNECTION_NAME": {
+      "label": "Connection Name",
+      "value_constraint": "connection"
+    },
+    "SCHEMA_NAME": {
+      "label": "Schema Name"
+    }
+  },
+  "models": [
+    {
+      "name": "retail_block_model_v2",
+      "connection_constant": "CONNECTION_NAME"
+    }
+  ]
+}
