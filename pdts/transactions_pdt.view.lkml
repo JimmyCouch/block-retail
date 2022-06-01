@@ -13,7 +13,7 @@ view: transactions_pdt {
   }
 
   dimension: id {
-    sql: ${TABLE}.id ;;
+    sql: ${TABLE}.transaction_id ;;
     type: number
   }
 }
