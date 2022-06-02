@@ -9,6 +9,7 @@ view: transactions_pdt {
       orders.shopify_customer_id as customer_id,
       orders.order_created_at as transaction_timestamp
       FROM test_hw_postgres_to_bq.orders
+      WHERE orders.shopify_customer_id IS NOT NULL
     ;;
   }
 
