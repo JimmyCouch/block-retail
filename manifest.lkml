@@ -21,7 +21,7 @@ constant: WEATHER_SCHEMA_NAME {
 }
 
 constant: TRANSACTIONS_TABLE_NAME {
-  value: "transactions_pdt"
+  value: "CH_retail_block_model_v2_transactions_pdt"
   export: override_optional
 }
 
@@ -31,12 +31,12 @@ constant: CHANNELS_TABLE_NAME {
 }
 
 constant: CUSTOMERS_TABLE_NAME {
-  value: "customers_pdt"
+  value: "CH_retail_block_model_v2_customers_pdt"
   export: override_optional
 }
 
 constant: PRODUCTS_TABLE_NAME {
-  value: "products_pdt"
+  value: "CH_retail_block_model_v2_products_pdt"
   export: override_optional
 }
 
