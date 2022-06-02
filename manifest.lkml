@@ -41,7 +41,7 @@ constant: PRODUCTS_TABLE_NAME {
 }
 
 constant: STORES_TABLE_NAME {
-  value: "stores_pdt"
+  value: "CH_retail_block_model_v2_stores_pdt"
   export: override_optional
 }
 

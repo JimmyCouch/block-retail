@@ -15,6 +15,7 @@ explore: customers_pdt {}
 explore: line_items_pdt {}
 explore: products_pdt {}
 explore: transactions_pdt {}
+explore: stores_pdt {}
 
 
 # Value formats:
