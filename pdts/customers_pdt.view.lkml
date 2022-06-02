@@ -1,6 +1,7 @@
 view: customers_pdt {
   derived_table: {
-    publish_as_db_view: yes
+    materialized_view: yes
+    #publish_as_db_view: yes
     sql_trigger_value: SELECT CURRENT_DATE ;;
     sql: SELECT
       customers.id as id,
