@@ -5,9 +5,10 @@ view: line_items_pdt {
     indexes: ["id"]
     sql:
     SELECT
+      line_items.id as id,
       line_items.product_id as product_id,
       line_items.quantity as quantity,
-      (line_items.quantity * line_items.price) as sale_price
+      SAFE_MULTIPLY(CAST(line_items.quantity AS BIGNUMERIC), CAST(line_items.price AS BIGNUMERIC)) as sale_price
       FROM test_hw_postgres_to_bq.line_items
     ;;
   }
