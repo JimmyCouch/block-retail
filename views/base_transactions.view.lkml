@@ -24,7 +24,7 @@ view: transactions {
   }
 
   dimension: line_items {
-    hidden: yes
+    # hidden: yes
     sql: ${TABLE}.line_items ;;
   }
 
