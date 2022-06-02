@@ -16,7 +16,8 @@ view: transactions_pdt {
         line_items.quantity as quantity,
         SAFE_MULTIPLY(CAST(line_items.quantity AS BIGNUMERIC), CAST(line_items.price AS BIGNUMERIC)) as sale_price
         FROM test_hw_postgres_to_bq.line_items WHERE line_items.order_id = orders.id
-      ) as line_items
+      ) as line_items,
+      1 as store_id
       FROM test_hw_postgres_to_bq.orders
       WHERE orders.shopify_customer_id IS NOT NULL
     ;;
